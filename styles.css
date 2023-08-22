@@ -1,0 +1,331 @@
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.table tbody td {
+    font-size: 14px;
+    padding: 8px;
+    background-color: white;
+  }
+.table {
+      table-layout: fixed;
+      width: 100%;
+      font-size: 14px;
+      background-color: #F2F0D9;
+}
+.table thead th {
+    font-size: 16px;
+    padding: 12px 8px;
+    background-color: white;
+  }
+    .table td,
+    .table th {
+      text-align: center;
+      vertical-align: middle;
+    }
+    .table img {
+      max-width: 30px;
+      height: auto;
+    }
+    
+tr[data-href] {
+  cursor: pointer;
+}
+
+    .introtext {
+    text-align: center;
+    color: white;
+    margin: 50px 0 20px;
+  }
+  .introtext2 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+ .display-4 {
+    margin-top: 2px; /* Adjust this value as needed to reduce white space */
+}
+
+header {
+  position: relative;
+  top: -40px;
+}
+
+.header-image-container {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  background-image: url('https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/10/FWWC2023-Case_study-Tagline.png?resize=1000%2C563&ssl=1'); /* Replace 'path-to-your-image.jpg' with the actual image file path */
+  background-size: cover; /* Adjust the background size to cover the container */
+  background-repeat: no-repeat; /* Prevent the background from repeating */
+  background-color: yellow; /* Fallback color if the image is unavailable or partially loaded */
+}
+
+
+.header-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  /* Add more styling for the image as needed */
+}
+
+
+.scroll-icon {
+    position: absolute;
+    bottom: 5%; /* Adjust this value to move the icon further up */
+    left: 47%;
+    transform: translateX(-50%);
+    font-size: 32px; /* Increase the icon size */
+    color: white; /* Change the icon color to orange */
+    cursor: pointer;
+    animation: bounce 2s infinite; /* Add a bounce animation */
+    background-color: rgba(0, 0, 0, 0.3); /* Add a background overlay */
+    padding: 10px; /* Add some padding around the icon */
+    border-radius: 10%; /* Make the icon container circular */
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Adjust the bounce height */
+    }
+}
+@keyframes arrowBlink {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+.hosted-text-container {
+      background-color: rgba(0, 0, 0, 0.7); /* You can adjust the background color and transparency here */
+      padding: 0px;
+      text-align: center;
+      font-size: 18px; /* Increase the font size for better readability */
+      color: white;
+    }
+    .hosted-text {
+      color: black;
+    }
+
+    .footer-text-container{
+      background-color: #7DE0D3;
+      padding-top: 2%;
+      padding-bottom: 2%;
+      text-align: center;
+    }
+/* Dark/Light toggle */
+    .darkMode {
+      background-color: #252525;
+      color: white;
+    }
+    .centered-h1 {
+      text-align: center;
+      margin-top: 50px; /* Adjust the margin as needed */
+    }
+    .custom-font {
+      font-family: 'Sora', sans-serif;
+ /* Use the font name you want */
+    }
+    body {
+      font-family: 'Source Sans Pro', sans-serif; /* Use the font name you want */
+    }
+
+
+.dark-light-toggle:hover {
+  background-color: black;
+  color: white;
+}
+.custom-bg-color {
+  background-color: #7DE0D3;
+  padding: 10px; /* Add padding to adjust the border size */
+}
+.hosted-text {
+  font-size: 14px;
+  color: #000; /* Change the color as needed */
+}
+.btn-dark {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+  margin-top: -20px;
+}
+
+.btn-light {
+  color: #000;
+  background-color: #fff;
+  border-color: #000;
+}
+/* page 2 */
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.back-to-top{
+  background-color: #7DE0D3;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #244357;
+}
+
+.back-to-top a {
+  text-decoration: none;
+  color: #244357;
+}
+.back-to-top a:hover {
+ font-weight: bold;
+}
+
+.back-to-top{
+  background-color: #7DE0D3;
+}
+
+    /* Flip CSS */
+
+    .flip-box .accordion-button:focus {
+      outline: none;
+      box-shadow: none;
+      border: none;
+    }
+    
+
+
+.flip-box {
+background-color: transparent;
+width: 300px;
+height: 200px;
+perspective: 1000px;
+margin: 10px;
+}
+
+.flip-box-back h3 {
+  font-size: 30px; /* Adjust the font size for the h3 element */
+  padding: 20px;
+}
+
+.flip-box-back p {
+  font-size: 20px; /* Adjust the font size for the p element */
+}
+
+.flip-box-inner {
+position: relative;
+width: 100%;
+height: 100%;
+text-align: center;
+transition: transform 0.8s;
+transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+transform: rotateY(180deg);
+}
+
+.flip-box-front,
+.flip-box-back {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+background-color: #bbb;
+color: black;
+}
+
+.flip-box-back {
+background-color: #7DE0D3;
+color: black;
+transform: rotateY(180deg);
+}
+
+.accordion {
+border: solid 1px #244357;
+margin: 30px;
+}
+
+.flip-box-front, .flip-box-back, .flip-box-front img {
+  width: 300px;
+  height: 200px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .custom-bg-color {
+    background-color: #e6abc2;
+    border: black; /* Remove default border */
+    padding: 10px; /* Add padding to adjust the border size */
+  }
+  .footer-text-container{
+    background-color: #e6abc2;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+  }
+  .back-to-top  {
+    background-color: #e6abc2;
+  }
+
+  .flip-box-back {
+    background-color: #e6abc2;
+    color: black;
+    transform: rotateY(180deg);
+    font-size: 20px;
+    }
+
+  }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .custom-bg-color {
+    background-color: #eae516;
+    padding: 10px; /* Add padding to adjust the border size */
+  }
+  .footer-text-container{
+    background-color: #eae516;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+  }
+  .back-to-top {
+    background-color: #eae516;
+  }
+  .flip-box-back {
+    background-color: #eae516;
+    color: black;
+    transform: rotateY(180deg);
+    font-size: 20px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .custom-bg-color {
+    background-color: #7DE0D3;
+    padding: 10px; /* Add padding to adjust the border size */
+  }
+  .footer-text-container{
+    background-color: #7DE0D3;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+  }
+  .back-to-top{
+    background-color: #7DE0D3;
+  }
+  .flip-box-back {
+    background-color: #7DE0D3;
+    color: black;
+    transform: rotateY(180deg);
+    font-size: 20px;
+    }
+  }
